@@ -1,26 +1,41 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, createEntityAdapter } from "@reduxjs/toolkit";
+import axios from "axios";
+
+export const getStudents = createAsyncThunk("students/getStudents", async() => {
+    const response = await axios.get('https://633e982c83f50e9ba3b3d23f.mockapi.io/v1/students');
+    return response.data;
+});
+
+export const addStudents = createAsyncThunk("students/addStudents", async({nama, nisn, email, noHandphone, jenisKelamin, alamat}) => {
+    const response = await axios.post('https://633e982c83f50e9ba3b3d23f.mockapi.io/v1/students', {
+        nama, 
+        nisn, 
+        email, 
+        noHandphone, 
+        jenisKelamin, 
+        alamat
+    });
+    return response.data;
+});
+
+
+const studentEntitiy = createEntityAdapter({
+    selectId: (student) => student.id
+});
 
 const studentSlice = createSlice({
     name: "student",
-    initialState: {
-        nama: "Farah",
-        nisn: "23456",
-        noHandphone: "",
-        email: "",
-        jenisKelamin: "",
-        alamat: "",
-    },
-    reducers: {
-        update: (state, action) => {
-            state.nama = action.payload.nama;
-            state.nisn = action.payload.nisn;
-            state.noHandphone = action.payload.noHandphone;
-            state.email = action.payload.email;
-            state.jenisKelamin = action.payload.jenisKelamin;
-            state.alamat = action.payload.alamat;
+    initialState: studentEntitiy.getInitialState(),
+    extraReducers: {
+        [getStudents.fulfilled]: (state, action) => {
+            studentEntitiy.setAll(state, action.payload);
+        },
+        [addStudents.fulfilled]: (state, action) => {
+            studentEntitiy.setOne(state, action.payload);
         }
     }
 });
 
-export const {update} = studentSlice.actions;
+export const studentSelectors = studentEntitiy.getSelectors(state => state.student);
+// export const {update} = studentSlice.actions;
 export default studentSlice.reducer;

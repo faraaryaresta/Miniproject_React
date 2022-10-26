@@ -1,0 +1,149 @@
+/* HOME DAN BANNER*/
+.banner{
+    min-height: 100vh;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background:url(./img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .content{
+    width: 100rem;
+    text-align: center;
+}
+
+.banner .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.banner .content p{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+.btnbanner{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.3rem 2rem;
+    font-size: 1.2rem;
+    color:#fff;
+    background: #8cb791 !important;
+    cursor: pointer;
+}
+
+.btnbanner:hover{
+    letter-spacing: .2rem;
+}
+/* HOME & BANNER */
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:black;
+    text-transform: uppercase;
+}
+.about {
+    background-color: #749465;
+    padding-left: 30px;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(rgb(127, 106, 106));
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 25rem;
+}
+
+.about .row .image img{
+    width: 50%;
+}
+.about .row .content{
+    flex:1 1 35rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.2rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+/* SECTION KEDUA */
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+.variations p{
+    font-size: 2rem;
+    text-align: center;
+    color: #BA8D88;
+}
+
+.variations .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1.5rem;
+}
+
+.variations .box-container .box{
+    padding:5rem;
+    text-align: center;
+    border:var(rgb(177, 216, 166));    
+}
+
+.variations .box-container .box img{
+    height: 15rem;
+}
+
+.variations .box-container .box h3{
+    color: #BA8D88;
+    font-size: 1.3rem;
+    padding:1rem 0;
+}
+.variations .box-container .box:hover{
+    background:#e1b8b3;
+}
+
+.variations .box-container .box:hover > *{
+    color:var(black);
+}
+/* SECTION KEDUA */
+
+.card {
+    width: 18rem;
+}
+
+
+

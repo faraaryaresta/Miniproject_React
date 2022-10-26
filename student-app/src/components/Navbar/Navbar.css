@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  
+    color: #48494a;
+    background-image: url(./bodybg.jpg);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand {
+font-size: 24px;
+}
+.text-e {
+color: #629772 !important;
+}
+.navbar-brand {
+font-family: 'Philosopher', sans-serif;
+}
+.navbar-nav a:hover {
+color:  #629772 !important;
+}
