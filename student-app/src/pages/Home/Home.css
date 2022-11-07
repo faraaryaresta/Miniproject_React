@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
 /* HOME DAN BANNER*/
 .banner{
     min-height: 100vh;
@@ -40,110 +50,68 @@
 .btnbanner:hover{
     letter-spacing: .2rem;
 }
-/* HOME & BANNER */
-.heading{
-    text-align: center;
-    color:#fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
+
+.about {
+    background-color: rgb(231, 231, 231);
+    margin: 90px;
+    padding: 10px;
+}
+.about img{
+    width: 80%;
+    height: 100%;
+}
+.aboutschools{
+    text-align: justify; 
+    text-justify: inter-word
+}
+.teacher .card {
+box-shadow: 0 0 5px rgb(134, 133, 133);
+background-color: rgb(231, 231, 231);
 }
 
-.heading span{
-    color:black;
-    text-transform: uppercase;
+.blog {
+position: relative;
+margin: 4em 0;
 }
-.about {
-    background-color: #749465;
-    padding-left: 30px;
+
+.blog h1 {
+margin: 2em;
 }
-.about .row{
-    display: flex;
+
+.blog .card {
+box-shadow: 0 0 5px rgb(134, 133, 133);
+height: 515px;
+}
+
+.blog .card img {
+width: 100%;
+height: 18rem;
+filter: brightness(0.8);
+}
+
+.blog .card-body {
+padding: 1em;
+}
+
+.wisdom .content3{
+    background:rgb(231, 231, 231);
+    flex:1 1 40rem;
+    padding: 2rem;
     align-items: center;
-    background:var(rgb(127, 106, 106));
     flex-wrap: wrap;
 }
 
-.about .row .image{
-    flex: 1 25rem;
-}
-
-.about .row .image img{
-    width: 50%;
-}
-.about .row .content{
-    flex:1 1 35rem;
-    padding:2rem;
-}
-
-.about .row .content h3{
-    font-size: 3rem;
-    color:#fff;
-}
-
-.about .row .content p{
-    font-size: 1.2rem;
-    color:#ccc;
+.wisdom .content3 p{
+    font-size: 1.3rem;
+    color:#3D3838 !important;
     padding:1rem 0;
+    text-align: center;
     line-height: 1.8;
 }
 
-/* SECTION KEDUA */
-section{
-    padding:2rem 7%;
+.alasan .card {
+    box-shadow: 0 0 5px rgb(134, 133, 133);
 }
-
-.heading{
-    text-align: center;
-    color:#fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
+.activities .card {
+    box-shadow: 0 0 5px rgb(134, 133, 133);
 }
-
-.heading span{
-    color:var(--main-color);
-    text-transform: uppercase;
-}
-.variations p{
-    font-size: 2rem;
-    text-align: center;
-    color: #BA8D88;
-}
-
-.variations .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap:1.5rem;
-}
-
-.variations .box-container .box{
-    padding:5rem;
-    text-align: center;
-    border:var(rgb(177, 216, 166));    
-}
-
-.variations .box-container .box img{
-    height: 15rem;
-}
-
-.variations .box-container .box h3{
-    color: #BA8D88;
-    font-size: 1.3rem;
-    padding:1rem 0;
-}
-.variations .box-container .box:hover{
-    background:#e1b8b3;
-}
-
-.variations .box-container .box:hover > *{
-    color:var(black);
-}
-/* SECTION KEDUA */
-
-.card {
-    width: 18rem;
-}
-
-
-

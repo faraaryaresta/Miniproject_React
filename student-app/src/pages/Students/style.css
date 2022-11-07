@@ -1,0 +1,22 @@
+.item {
+    text-align: center;
+    background-color: #78b68a !important ;
+}
+.item2 {
+    text-align: center;
+    background-color: #defbe3 !important ;
+}
+.card-header-add {
+    background-color: #629c72 !important;
+}
+.card-header-add h1{
+    color: white;
+    font-weight: 600;
+    font-size: 45px;
+}
+.card-body-add {
+    background-color: #addeb3 !important;
+}
+.icons {
+    font-size: 22px;
+}

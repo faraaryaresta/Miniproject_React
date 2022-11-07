@@ -1,0 +1,21 @@
+.pagenotfound{
+    background-color: rgb(237, 231, 231);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    color: black;
+    text-align: center;
+}
+.textnot{
+    padding-top: 80px;
+}
+button {
+    background-color: rgb(12, 59, 120);
+    color: white;
+    padding: 10px 10px 10px 16px;
+}
+button:hover {
+    background-color: rgb(72, 155, 194);
+}

@@ -1,0 +1,20 @@
+/* contact */
+.contact-form {
+    position: relative;
+    margin: 100px 200px;
+    background-color:  #78b68a !important;
+    padding : 50px 60px;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+}
+
+.contact-form .field {
+    max-width: 600px;
+}
+
+.contact-form .field .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
+}
